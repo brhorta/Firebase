@@ -121,6 +121,9 @@
                             <constraint firstItem="9iO-YB-4Yy" firstAttribute="leading" secondItem="IMi-ri-sc2" secondAttribute="leading" constant="248" id="mN0-SF-t2C"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mensagemLabel" destination="lyA-AW-w0h" id="f1k-8x-izw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LtW-84-D7k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

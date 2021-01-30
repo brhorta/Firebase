@@ -9,8 +9,10 @@ import UIKit
 import Firebase
 
 class tela2VC: UIViewController {
-
+    @IBOutlet weak var mensagemLabel: UILabel!
+    
     override func viewDidLoad() {
+        loadMessage()
         super.viewDidLoad()
         
         //try! Auth.auth().signOut()
@@ -32,4 +34,21 @@ class tela2VC: UIViewController {
         
     }
     
+    
+    func loadMessage(){
+        
+        mensagemLabel.text = Auth.auth().currentUser?.email
+//        var email = Auth.auth().currentUser?.email!
+//        if var nome = Auth.auth().currentUser?.displayName {
+//            nome = nome
+//        }
+//
+//        if Auth.auth().currentUser?.displayName != nil {
+//            mensagemLabel.text = nome ?? ""
+//        }else {
+//            mensagemLabel.text! = email ?? ""
+//
+//        }
+//
+    }
 }

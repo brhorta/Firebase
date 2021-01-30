@@ -6,5 +6,6 @@ target 'Firebase e Pods' do
 
 	pod 'Firebase/Auth'
 	pod 'IQKeyboardManagerSwift', '6.3.0'
+  pod 'FirebaseFirestoreSwift'
 
 end
